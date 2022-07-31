@@ -45,3 +45,5 @@ vector<int> solution(vector<int> progresses, vector<int> speeds)
     }
     return answer;
 }
+
+// https://starlightbox.tistory.com/29?category=1028651
