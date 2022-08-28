@@ -12,7 +12,7 @@ int map[26][26];
 vector<int> cntVec;
 int cnt;
 
-// ºÏ¼­³²µ¿
+// ë¶ì„œë‚¨ë™
 int dx[] = { 0, 1, 0, -1 };
 int dy[] = { 1, 0, -1, 0 };
 
@@ -41,7 +41,7 @@ int main()
 {
     scanf("%d", &N);
 
-    // Áöµµ µ¥ÀÌÅÍ ÀÔ·Â
+    // ì§€ë„ ë°ì´í„° ì…ë ¥
     for (int y = 0; y < N; y++)
     {
         for (int x = 0; x < N; x++)

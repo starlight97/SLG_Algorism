@@ -18,28 +18,28 @@ int bfs()
     visited[N] = 1;
     while (!dq.empty()) 
     {
-        // µ¦ÀÇ ¾ÕÀÇ ¿ä¼ÒµéºÎÅÍ ²¨³»¿È
+        // ë±ì˜ ì•ì˜ ìš”ì†Œë“¤ë¶€í„° êº¼ë‚´ì˜´
         int pos_x = dq.front();
         dq.pop_front();
 
         if (pos_x == K) 
             return visited[K] - 1;
 
-        // ¼ø°£ÀÌµ¿Àº µ¦ÀÇ ¾ÕÂÊ¿¡ Áı¾î³ÖÀ½.
+        // ìˆœê°„ì´ë™ì€ ë±ì˜ ì•ìª½ì— ì§‘ì–´ë„£ìŒ.
         if (pos_x * 2 < MAX_SIZE && !visited[pos_x * 2]) 
         {
             dq.push_front(pos_x * 2);
             visited[pos_x * 2] = visited[pos_x];
         }
 
-        // °È´ÂÀÌµ¿Àº µ¦ÀÇ µÚÂÊ¿¡ Áı¾î³ÖÀ½. °É¸°½Ã°£ +1
+        // ê±·ëŠ”ì´ë™ì€ ë±ì˜ ë’¤ìª½ì— ì§‘ì–´ë„£ìŒ. ê±¸ë¦°ì‹œê°„ +1
         if (pos_x + 1 < MAX_SIZE && !visited[pos_x + 1]) 
         {
             dq.push_back(pos_x + 1);
             visited[pos_x + 1] = visited[pos_x] + 1;
         }
 
-        // °È´ÂÀÌµ¿Àº µ¦ÀÇ µÚÂÊ¿¡ Áı¾î³ÖÀ½. °É¸°½Ã°£ +1
+        // ê±·ëŠ”ì´ë™ì€ ë±ì˜ ë’¤ìª½ì— ì§‘ì–´ë„£ìŒ. ê±¸ë¦°ì‹œê°„ +1
         if (pos_x - 1 >= 0 && !visited[pos_x - 1]) 
         {
             dq.push_back(pos_x - 1);

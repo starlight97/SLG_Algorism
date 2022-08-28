@@ -11,11 +11,11 @@ using namespace std;
 int visited[MAX][MAX];
 int map[MAX][MAX];
 
-// µ¿¼­³²ºÏ
+// ë™ì„œë‚¨ë¶
 int dx[] = { 0, 0, -1, 1 };
 int dy[] = { -1, 1, 0, 0 };
 
-// N : ¸Ê Å©±â
+// N : ë§µ í¬ê¸°
 int N;
 int safetyArea;
 queue<pair<int, int>> q;
@@ -33,7 +33,7 @@ void bfs(int height)
         {
             int nx = cur.X + dx[dir];
             int ny = cur.Y + dy[dir];
-            // ¹è¿­ ¹üÀ§ ¹ş¾î³ª´ÂÁö Ã¼Å©
+            // ë°°ì—´ ë²”ìœ„ ë²—ì–´ë‚˜ëŠ”ì§€ ì²´í¬
             if (nx < 0 || nx >= N || ny < 0 || ny >= N)
                 continue;
 
@@ -65,8 +65,8 @@ int main()
     cin.tie(0);
 
     scanf("%d", &N);
-    // M : °¡·Î±æÀÌ, N : ¼¼·Î ±æÀÌ
-    // ¸Ê Á¤º¸ ÀÔ·Â
+    // M : ê°€ë¡œê¸¸ì´, N : ì„¸ë¡œ ê¸¸ì´
+    // ë§µ ì •ë³´ ì…ë ¥
     for (int x = 0; x < N; x++)
     {
         for (int y = 0; y < N; y++)

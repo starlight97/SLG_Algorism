@@ -9,11 +9,11 @@ using namespace std;
 
 int map[MAX][MAX];
 int visit[MAX][MAX];
-//			»ó ÇÏ ÁÂ ¿ì
+//			ìƒ í•˜ ì¢Œ ìš°
 int dx[4] = {0, 0, -1, 1};
 int dy[4] = {1, -1, 0, 0};
 
-// N : ¼¼·Î ±æÀÌ, M : °¡·Î ±æÀÌ, K : ¾²·¹±âÀÇ °³¼ö
+// N : ì„¸ë¡œ ê¸¸ì´, M : ê°€ë¡œ ê¸¸ì´, K : ì“°ë ˆê¸°ì˜ ê°œìˆ˜
 int N, M, K;
 int result;
 

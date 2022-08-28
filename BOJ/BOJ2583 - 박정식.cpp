@@ -10,7 +10,7 @@ using namespace std;
 
 int N, M, K;
 
-// »óÇÏÁÂ¿ì
+// ìƒí•˜ì¢Œìš°
 int dx[4] = {0, 0, -1, 1};
 int dy[4] = {1, -1, 0, 0};
 int map[MAX][MAX];
@@ -65,7 +65,7 @@ void Print()
 int main()
 {
 	vector<int> v;
-	// M ¼¼·Î N °¡·Î
+	// M ì„¸ë¡œ N ê°€ë¡œ
 	cin >> M >> N >> K;
 
 	for (int i = 0; i < K; i++)
@@ -83,7 +83,7 @@ int main()
 	}
 
 
-	// Å×½ºÆ®¿ë
+	// í…ŒìŠ¤íŠ¸ìš©
 	//for (int x = 0; x < N; x++)
 	//{
 	//	for (int y = 0; y < M; y++)

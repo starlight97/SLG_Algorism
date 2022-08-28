@@ -5,7 +5,7 @@
 
 #define MAX 1001
 #define X first
-#define Y second // pair¿¡¼­ first, second¸¦ ÁÙ¿©¼­ ¾²±â À§ÇØ¼­ »ç¿ë
+#define Y second // pairì—ì„œ first, secondë¥¼ ì¤„ì—¬ì„œ ì“°ê¸° ìœ„í•´ì„œ ì‚¬ìš©
 
 using namespace std;
 
@@ -13,7 +13,7 @@ int graph[MAX][MAX];
 int visited[MAX];
 int N, M, V;
 
-// visited ÃÊ±âÈ­
+// visited ì´ˆê¸°í™”
 
 void reset()
 {
@@ -84,12 +84,12 @@ int main()
 {
 	cin >> N >> M >> V;
 
-	// ±×·¡ÇÁ ±¸¼º
+	// ê·¸ëž˜í”„ êµ¬ì„±
 	for (int i = 0; i < M; i++)
 	{
 		int vertex, edge;
 		cin >> vertex >> edge;
-		// ¾ç¹æÇâ °£¼±
+		// ì–‘ë°©í–¥ ê°„ì„ 
 		graph[vertex][edge] = 1;
 		graph[edge][vertex] = 1;
 	}
